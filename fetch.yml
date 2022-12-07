@@ -1,0 +1,15 @@
+- name: Set up openshift-install 
+  hosts: all
+
+  tasks:
+  - name: Fetch base64 content to localhost
+    ansible.builtin.fetch:
+      src: /tmp/src.txt
+      dest: /tmp/dest.txt
+      flat: yes
+      validate_checksum: no
+    register: base64
+    
+  - name: print result of base64 variable
+    debug:
+      var: base64
