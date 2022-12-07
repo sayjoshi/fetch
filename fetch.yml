@@ -1,5 +1,5 @@
 - name: Set up openshift-install 
-  hosts: all
+  hosts: localhost
 
   tasks:
   - name: Fetch base64 content to localhost
