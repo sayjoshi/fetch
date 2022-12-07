@@ -6,7 +6,7 @@
     ansible.builtin.fetch:
       src: /tmp/src.txt
       dest: /var/lib/awx/dest.txt
-      flat: yes
+      #flat: yes
       validate_checksum: no
     register: base64
     
