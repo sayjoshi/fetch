@@ -5,7 +5,7 @@
   - name: Fetch base64 content to localhost
     ansible.builtin.fetch:
       src: /tmp/src.txt
-      dest: /tmp/dest.txt
+      dest: /opt/dest.txt
       flat: yes
       validate_checksum: no
     register: base64
